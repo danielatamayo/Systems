@@ -1,0 +1,61 @@
+Script started on Mon 08 May 2017 03:32:12 PM CDT
+]0;daniela.tamayo01@cmpe2: ~/3334/Phase4daniela.tamayo01@cmpe2:~/3334/Phase4$ exitcat dev05.txtf1.txtls[K./phase4gcc Phase4.c -o phase4
+In file included from [01m[KPhase4.c:15:0[m[K:
+[01m[Ksicengine.c:[m[K In function ‘[01m[KSICError[m[K’:
+[01m[Ksicengine.c:152:13:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%x[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 2 has type ‘[01m[KADDRESS {aka long unsigned int}[m[K’ [-Wformat=]
+      printf("\n\nAt PC = %x: %s\n\n", PC, Msg[n]);
+[01;32m[K             ^[m[K
+[01m[Ksicengine.c:[m[K In function ‘[01m[KGetIR[m[K’:
+[01m[Ksicengine.c:259:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%c[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 4 has type ‘[01m[Kchar *[m[K’ [-Wformat=]
+                 sprintf(Inst, "%6s  %c,%c", Ops[OpCode].OP, REG[R1], REG[R2]);
+[01;32m[K                               ^[m[K
+[01m[Ksicengine.c:259:31:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%c[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kchar *[m[K’ [-Wformat=]
+[01m[Ksicengine.c:[m[K In function ‘[01m[KSICRun[m[K’:
+[01m[Ksicengine.c:1354:21:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%x[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 2 has type ‘[01m[KADDRESS {aka long unsigned int}[m[K’ [-Wformat=]
+              printf("\nStepped to PC = %x\n", PC);
+[01;32m[K                     ^[m[K
+]0;daniela.tamayo01@cmpe2: ~/3334/Phase4daniela.tamayo01@cmpe2:~/3334/Phase4$ gcc Phase4.c -o phase4exit[Kcat dev05.txtf1.txtls[K./phase4
+ENTER A COMMAND 
+dump 1033 1100
+1033: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1043: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1053: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1063: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1073: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1083: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1093: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10a3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10b3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10c3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10d3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10e3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10f3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+
+ENTER A COMMAND 
+load a object.txt
+File loaded!
+ENTER A COMMAND 
+dump 1033 1100
+1033: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1043: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1053: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1063: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1073: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1083: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+1093: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10a3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10b3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10c3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10d3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10e3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+10f3: ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  ff  
+
+ENTER A COMMAND 
+execute
+cannot open file devf1
+]0;daniela.tamayo01@cmpe2: ~/3334/Phase4daniela.tamayo01@cmpe2:~/3334/Phase4$ cat devf1[K[K[K[K[K[K[K[K[Kls
+dev05.txt  devf1.txt  object.txt  [0m[01;32mphase4[0m  Phase4.c  sicengine.c  typescript
+]0;daniela.tamayo01@cmpe2: ~/3334/Phase4daniela.tamayo01@cmpe2:~/3334/Phase4$ cat dev[K[K[K[K[K[K[Kexit
+exit
+
+Script done on Mon 08 May 2017 03:33:44 PM CDT
